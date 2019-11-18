@@ -6,14 +6,11 @@
 * [2. Resumo do projeto](#2-resumo-do-projeto)
 * [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
 * [4. Considerações gerais](#4-considerações-gerais)
-* [5. Critérios de aceitação mínimos do
-  projeto](#5-criterios-de-aceitação-mínimos-do-projeto)
+* [5. Critérios de aceitação mínimos do projeto](#5-criterios-de-aceitação-mínimos-do-projeto)
 * [6. Hacker edition](#6-hacker-edition)
 * [7. Considerações técnicas](#7-considerações-técnicas)
-* [8. Avaliação](#8-avaliação)
-* [9. Guias, dicas e leituras
-  complementares](#9-guias-dicas-e-leituras-complementares)
-* [10. Checklist](#10-checklist)
+* [8. Guias, dicas e leituras complementares](#8-guias-dicas-e-leituras-complementares)
+* [9. Checklist](#9-checklist)
 
 ***
 
@@ -119,9 +116,8 @@ A interface deve permitir ao usuário:
   foram tomadas.
 * `src/index.html`: aqui será o ponto de entrada da sua aplicação. Este arquivo
   deve conter a marcação HTML e chamar o CSS e JavaScript necessários.
-* `src/cipher.js`: aqui você deve implementar o objeto cipher, o qual deve estar
-  _exportado_ no objeto global (`window`). Este objeto (`cipher`) deve conter
-  dois métodos:
+* `src/cipher.js`: aqui você deve implementar o objeto `cipher`, o qual já está
+  _exportado_ no _boilerplate_. Este objeto (`cipher`) deve conter dois métodos:
   - `cipher.encode(offset, string)`: `offset` é o número de posições que
       queremos mover para a direita no alfabeto e `string` é a mensagem (texto)
       que queremos cifrar.
@@ -149,8 +145,8 @@ hacker edition te convidamos a explorar esse caso sozinha.
 
 ## 7. Considerações técnicas
 
-A lógica do projeto deve estar implementada inteiramente em JavaScript(ES6).
-Nesse projeto **NÃO** está permitido usar bibliotecas ou frameworks, só vanilla
+A lógica do projeto deve estar implementada inteiramente em JavaScript. Nesse
+projeto **NÃO** está permitido usar bibliotecas ou frameworks, só vanilla
 JavaScript.
 
 Você não deve usar a _pseudo-variable_ `this`.
@@ -170,6 +166,7 @@ como toda a configuração de dependências e testes de exemplo:
 
 ```text
 ./
+├── .babelrc
 ├── .editorconfig
 ├── .eslintrc
 ├── .gitignore
@@ -181,9 +178,8 @@ como toda a configuração de dependências e testes de exemplo:
 │   ├── index.js
 │   └── style.css
 └── test
-    ├── cipher.spec.js
-    ├── headless.js
-    └── index.html
+    ├── .eslintrc
+    └── cipher.spec.js
 ```
 
 O _boilerplate_ inclui tarefas que executam [eslint](https://eslint.org/) e
@@ -200,62 +196,9 @@ recomendadas (`"eslint:recommended"`)](https://eslint.org/docs/rules/).
 Nas regras/guias de estilo usaremos das recomandações padrão tanto para o
 `eslint` quanto `htmlhint`.
 
-## 8. Avaliação
-
-OBS: Esta seção inclui uma lista de habilidades que será levada em conta na hora
-de avaliar o projeto. O níveis _esperados_ são níveis _guias_ no desenho
-curricular, não são regras absolutas.
-
-Te aconselhamos revisar a [nossa
-rubrica](https://docs.google.com/spreadsheets/d/1hwyBoJWbA0MHGEMDLKqftIv64IhA1uKe2kmJhYpir4s/edit#gid=1789463812)
-para ver a descrição detalhada de cada _habilidade_ e _nível_. Te recomandamos
-também a se autoavaliar de acordo com a rubrica para acompanhar a sua evolução
-ao longo do Bootcamp.
-
-### Habilidades Interpessoais (Soft Skills)
-
-| Habilidade                                      | Nível esperado |
-|-------------------------------------------------|----------------|
-| Planejamento e administração do tempo           | 2              |
-| Autoaprendizado                                 | 2              |
-| Apresentações                                   | 2              |
-| Adaptabilidade                                  | 2              |
-| Solução de problemas                            | 2              |
-| Responsabilidade                                 | 2              |
-| Dar e receber feedback                          | 2              |
-| Comunicação eficaz                              | 2              |
-
-### Habilidades Técnicas (Front-end)
-
-| Habilidade                              | Nível esperado |
-|-----------------------------------------|----------------|
-| **Computer Science (CS)**                                |
-| Lógica / Algoritmos                     | 1              |
-| Arquitetura                             | 1              |
-| **Source Code Management (SCM)**                         |
-| Git                                     | 1              |
-| GitHub                                  | 2              |
-| **JavaScript**                                           |
-| Estilo (linter js)                      | 2              |
-| Nomenclatura / semântica                | 2              |
-| Uso de funções / modularidade           | 1              |
-| Testes                                  | 2              |
-| **HTML/CSS**                                             |
-| Exatidão / Validação                    | 2              |
-| Estilo (linter html)                    | 3              |
-| Semântica / Arquitetura de Informação   | 2              |
-| DRY (CSS)                               | 2              |
-| Responsive Web Design                   | 2              |
-
-### Habilidades Técnicas (UX)
-
-| Habilidade      | Nível esperado |
-|-----------------|----------------|
-| User Centricity | 2              |
-
 ***
 
-## 9. Guias, dicas e leituras complementares
+## 8. Guias, dicas e leituras complementares
 
 ### Primeiros passos
 
@@ -328,7 +271,7 @@ Organização do trabalho:
 * [Guia em espanhol para a
   cifra](https://docs.google.com/presentation/d/e/2PACX-1vTQ7-8LZDHrT4Y6AOBN72Nkfz1eJAeseBHpcHX8BSq0aFCFoZmuMjluMeyFNgK9ISKxTz0H03yGfJiT/pub?start=false&loop=false&delayms=60000)
 
-## 10. Checklist
+## 9. Checklist
 
 Essa seção é para te ajudar a ter um controle do que você precisa completar.
 
