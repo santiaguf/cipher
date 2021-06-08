@@ -1,0 +1,46 @@
+textarea {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  background: #293B8C;
+  border-radius: 10px;
+  font-size: 1.2em;
+  color: white;
+  font-weight: bold;
+}
+
+#cipher-container {
+  display: flex; /* or inline-flex */
+}
+
+#main-card {
+  background: #FFC430;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 1%;
+}
+
+#offset {
+  width: 2em;
+}
+
+.box-container {
+  width: 40%;
+  margin: 1%;
+}
+
+.main-text {
+  background-color: white;
+  color: #838383;
+  border-radius:10px;
+  text-align: center;
+
+}
+
+.text {
+  padding: 5px;
+  margin: 10px;
+  font-weight: bold;
+}
