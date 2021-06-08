@@ -41,7 +41,20 @@ const encodeText = () => {
   document.getElementById('decode-text').value = result;
 };
 
+const decodeText = () => {
+  const text = document.getElementById('decode-text').value.toUpperCase();
+  const offset = parseInt(document.getElementById('offset').value);
+  const result = cipher.decode(offset, text);
+
+  document.getElementById('encode-text').value = result;
+};
+
 const encodeButton = document.getElementById('encode-button');
 encodeButton.addEventListener('click', () => {
   encodeText();
+});
+
+const decodeButton = document.getElementById('decode-button');
+decodeButton.addEventListener('click', () => {
+  decodeText();
 });
