@@ -1,7 +1,5 @@
 import cipher from './cipher.js';
 
-console.log(cipher);
-
 document.getElementById('root').innerHTML = `
   <div id="main-card">
   <div id="card-title" class="main-text text"><h1>Lista de convocados Selección Colombia ⚽  🇨🇴</h1></div>
@@ -34,3 +32,16 @@ document.getElementById('root').innerHTML = `
 
   <footer class="text"><h3>Cipher © 2021 - todos los derechos reservados - <a href="https://github.com/santiaguf/cipher" target="_blank">código fuente</a></h3></footer>
 `;
+
+const encodeText = () => {
+  const text = document.getElementById('encode-text').value.toUpperCase();
+  const offset = parseInt(document.getElementById('offset').value);
+  const result = cipher.encode(offset, text);
+
+  document.getElementById('decode-text').value = result;
+};
+
+const encodeButton = document.getElementById('encode-button');
+encodeButton.addEventListener('click', () => {
+  encodeText();
+});
