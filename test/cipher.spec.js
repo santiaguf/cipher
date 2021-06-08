@@ -75,8 +75,8 @@ describe('cipher', () => {
       expect(cipher.decode(33, 'HIJKLMNOPQRSTUVWXYZABCDEFG')).toBe('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
     });
 
-    it('should return "KLMNOPQR" for "HIJKLMNO" with offset 3', () => {
-      expect(cipher.decode(3, 'HIJKLMNO')).toBe('KLMNOPQR');
+    it('should return "EFGHIJKL" for "HIJKLMNO" with offset 3', () => {
+      expect(cipher.decode(3, 'HIJKLMNO')).toBe('EFGHIJKL');
     });
 
     //
