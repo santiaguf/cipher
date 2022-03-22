@@ -14,7 +14,7 @@ document.getElementById('root').innerHTML = `
         <button id="encode-button" class="button">Cifrar</button>
       </div>
       <div id="offset-container" class="text">
-        <span>desplazamiento/rotaciones</span>
+        <label for="offset">desplazamiento/rotaciones</label>
         <input id="offset" type="number" value="3">
       </div>
     </div>
