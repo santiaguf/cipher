@@ -9,21 +9,25 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔐</text></svg>">
     <link rel="apple-touch-icon" href="img/AppImages/ios/192.png">
     <style>
+      *{
+        margin: 1%;
+        padding: 0%;
+      }
       textarea {
         width: 100%;
       }
-
       button {
         width: 100%;
+        margin-top: 2%;
         background: #293B8C;
         border-radius: 10px;
         font-size: 1.2em;
         color: white;
-        font-weight: bold;
       }
 
       #cipher-container {
         display: flex; /* or inline-flex */
+        justify-content: space-around;
       }
 
       #main-card {
@@ -38,22 +42,44 @@
       }
 
       .box-container {
+        display:block;
         width: 40%;
         margin: 1%;
+      }
+      .design{
+        display: block;
+        align-items: center;
+        border-radius: 10px;
       }
 
       .main-text {
         background-color: white;
-        color: #838383;
+        color: #414141;
         border-radius:10px;
         text-align: center;
-
       }
 
       .text {
         padding: 5px;
         margin: 10px;
         font-weight: bold;
+      }
+      @media  (max-width:  480px){
+        #cipher-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        button {
+          padding: 2%;
+          }
+        #offset-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+        }
       }
     </style>
     <link rel='manifest' href='manifest.json'>
