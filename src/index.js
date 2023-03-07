@@ -30,7 +30,8 @@ document.getElementById('root').innerHTML = `
   </div>
   </div>
 
-  <footer class="text"><h3>Cipher © 2021 - todos los derechos reservados - <a href="https://github.com/santiaguf/cipher" target="_blank">código fuente</a></h3></footer>
+  <footer class="text"><p>Cipher © 2021 - todos los derechos reservados - <a href="https://github.com/santiaguf/cipher" target="_blank">código fuente</a></p>
+  </footer>
 `;
 
 const encodeText = () => {
